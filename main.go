@@ -29,6 +29,9 @@ type VixRequest struct {
 }
 
 func (vix *VixRequest) init() {
+	//should be either
+	// https://au.vixverify.com/Registrations-Registrations/DynamicFormsServiceV3?wsdl
+	// https://test-au.vixverify.com/Registrations-Registrations/DynamicFormsServiceV3?WSDL
 	vix.URL = os.Getenv("SOAPURL")
 }
 
